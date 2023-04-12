@@ -19,6 +19,8 @@ Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/navarasu/onedark.nvin'
 Plug 'https://github.com/preservin/tagbar'
 Plug 'https://github.com/jiangmiao/auto-pairs'
+Plug 'https://github.com/romgrk/barbar.nvim'
+Plug 'romgrk/barbar.nvim'
 
 call plug#end()
 
