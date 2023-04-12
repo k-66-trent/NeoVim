@@ -21,6 +21,7 @@ Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/romgrk/barbar.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
+Plug 'https://github.com/folke/tokyonight.nvim'
 
 call plug#end()
 
@@ -33,10 +34,12 @@ nnoremap <C-q> :q<CR>
 nnoremap <C-d> dd<CR>
 nnoremap <C-z> u<CR>
 
-let g:onedark_config = {
-    \ 'style': 'darker',
-\}
-colorscheme onedark
+"let g:onedark_config = {
+"    \ 'style': 'darker',
+"\}
+"colorscheme onedark
+
+colorscheme tokyonight-night
 
 augroup exe_code
          autocmd!
