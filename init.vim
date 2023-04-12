@@ -20,7 +20,7 @@ Plug 'https://github.com/navarasu/onedark.nvim'
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/romgrk/barbar.nvim'
-Plug 'romgrk/barbar.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 
 call plug#end()
 
@@ -43,3 +43,4 @@ augroup exe_code
          autocmd FileType python nnoremap  <buffer> <localleader> r
                           \ :sp<CR> :term python3 %<CR> :startinsert<CR>
 augroup END
+
