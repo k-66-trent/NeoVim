@@ -7,6 +7,7 @@ set splitbelow splitright
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set shortmess+=c
 
 call plug#begin("~/.config/nvim/plugged")
 
@@ -33,6 +34,8 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
 nnoremap <C-d> dd<CR>
 nnoremap <C-z> u<CR>
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "let g:onedark_config = {
 "    \ 'style': 'darker',
