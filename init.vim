@@ -8,16 +8,16 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-call plug#begin("~/.config/nvin/plugged')
+call plug#begin("~/.config/nvim/plugged")
 
-Plug 'https://github.com/preservin/nerdtree'
+Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tc50cal/vim-terminal'
-Plug 'https://github.com/navarasu/onedark.nvin'
-Plug 'https://github.com/preservin/tagbar'
+Plug 'https://github.com/navarasu/onedark.nvim'
+Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/romgrk/barbar.nvim'
 Plug 'romgrk/barbar.nvim'
@@ -34,8 +34,8 @@ nnoremap <C-d> dd<CR>
 nnoremap <C-z> u<CR>
 
 let g:onedark_config = {
-      \ 'style': 'deep',
- \}
+    \ 'style': 'darker',
+\}
 colorscheme onedark
 
 augroup exe_code
