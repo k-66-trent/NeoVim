@@ -9,8 +9,12 @@ set shiftwidth=4
 set expandtab
 set shortmess+=c
 
+
 call plug#begin("~/.config/nvim/plugged")
 
+Plug 'https://github.com/Mofiqul/dracula.nvim'
+Plug 'https://github.com/morhetz/gruvbox'
+Plug 'https://github.com/maxmx03/fluoromachine.nvim'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/ap/vim-css-color'
@@ -28,22 +32,26 @@ call plug#end()
 
 nnoremap <C-r> :TagbarToggle<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-y> :TerminalSplit bash<CR>
+nnoremap <C-y> :botright split<CR>
 nnoremap <C-u> :term<CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
+nnoremap <C-f> :wq<CR>
 nnoremap <C-d> dd<CR>
 nnoremap <C-z> u<CR>
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+"inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "let g:onedark_config = {
 "    \ 'style': 'darker',
 "\}
 "colorscheme onedark
 
-colorscheme tokyonight-night
+colorscheme dracula
+set termguicolors
+highlight Normal guibg=black
 
+set background=dark
 augroup exe_code
          autocmd!
          autocmd FileType python nnoremap  <buffer> <localleader> r
